@@ -416,7 +416,7 @@ input::placeholder{
 }
 .container6-item{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 0.2rem;
     margin-top: 1rem;
    margin-right: 2rem;
