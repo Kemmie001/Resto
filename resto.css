@@ -163,6 +163,14 @@ padding: 2rem;
     font-size: 1rem;
     
 }
+<<<<<<< HEAD
+=======
+.founder{
+    width: 100%;
+
+}
+
+>>>>>>> 7f4a93632230988e3d8a80fa098b6cb129d3d201
 .open{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -405,10 +413,22 @@ input::placeholder{
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
 }
+<<<<<<< HEAD
 .founder-img{
     border-radius: 0.2rem;
     width: 100%;
     float: left;
+=======
+.container6-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0.2rem;
+    margin-top: 1rem;
+}
+.founder-img{
+    border-radius: 0.2rem;
+    width: 100%;
+>>>>>>> 7f4a93632230988e3d8a80fa098b6cb129d3d201
 }
 .container6-about{
     background: rgb(240, 240, 8);
