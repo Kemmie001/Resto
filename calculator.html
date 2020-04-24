@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    input{
+        border: none;
+        width: 200px;
+        
+    }
+    .main{
+        display: grid;
+        grid-template-columns:40px 40px 40px 40px;
+        grid-gap: 1rem;
+        justify-content: center;
+        align-content: center;
+        margin: 1rem;
+    }
+    .circle{
+        border-radius: 50%;
+        background-color: rgb(218, 195, 218);
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .red{
+        background-color: red;
+        font-weight: 50;
+    }
+    .green{
+        background-color: green;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .blue{
+        background-color: rgb(24, 170, 228);
+    }
+    .orange{
+        background-color: orangered;
+    }
+    .last{
+        display: grid;
+        grid-template-columns: 160px 40px;
+        grid-gap: 0.4rem;
+        justify-content: center;
+        align-content: center;
+    }
+    button{
+        width: 9.5rem;
+        height: 2rem;
+        text-align: center;
+        background: coral;
+        border: none;
+    }
+</style>
+<body>
+    <h1>My Calculator</h1>
+    <div class="main1">
+    <input type="text" ><br>
+    <input type="text">
+    <div class="main">
+       <div class="circle">9</div>
+       <div class="circle">8</div>
+       <div class="circle">7</div>
+       <div class="circle green">+</div>
+       <div class="circle">6</div>
+       <div class="circle">5</div>
+       <div class="circle">4</div>
+       <div class="circle red">-</div>
+       <div class="circle">3</div>
+       <div class="circle">2</div>
+       <div class="circle">1</div>
+       <div class="circle yellow">&divide;</div>
+       <div class="circle">C</div>
+       <div class="circle">CE</div>
+       <div class="circle">0</div>
+       <div class="circle blue">&times;</div>
+    </div>
+    <div class="last">
+        <div><button>=</button></div>
+        <div class="circle orange">%</div>
+    </div>
+    </div>
+</body>
+</html>
