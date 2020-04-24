@@ -183,14 +183,26 @@ padding: 2rem;
     /* justify-content: center; */
     /* align-content: center; */
 }
+.contact_info{
+    grid-template-columns: repeat(3, 1fr);
+    order: -1;
+}
 }
 @media screen and (max-width:768px){
-   
+  .welcome{
+      font-size: 1rem;
+  }
+    .company{
+      font-size: 1rem;
+  }
+    .text1{
+       font-size: 0.5rem;
+   }
     .headings-item a {
         font-size: 0.5rem;
     }
     .logo{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .text{
         font-size: 0.5rem;
@@ -332,6 +344,7 @@ input::placeholder{
     width: 6rem;
     margin: auto;
     text-align: center;
+    font-size: 1rem;
 }
 .event{
     margin:auto 0;
@@ -350,7 +363,6 @@ input::placeholder{
 .container4-item-inner{
     background: white;
     height: 100%;
-    width: 18rem;
     margin:auto ;
     
 }
@@ -451,13 +463,6 @@ input::placeholder{
 .contact_item-text a {
     text-decoration: none;
 }
-@media screen and (min-width:760px){
-    .contact_info{
-        grid-template-columns: repeat(3, 1fr);
-        order: -1;
-    }
-}
-
 .social a{
     color:rgb(230, 247, 2);
 }
