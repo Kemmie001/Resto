@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="resto.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
@@ -15,21 +14,20 @@
     <header class="head">
         <div class="headings">
         <div class="heads">
+            <div class="fixed">
             <ul class="headings-item">
                 <li class="logo"><i>RESTO</i></li>
-                <li class="push"><a href="#">home</a></li>
-                <li class="mid"><a href="#">store</a></li>
-                <li class="mid"><a href="#">services</a></li>
-                <li class="mid"><a href="#">reservations</a></li>
-                <li class="mid"><a href="#">events</a></li>
-                <li class="mid"><a href="#">Gallery</a></li>
-                <li class="mid"><a href="#">About</a></li>
-                <li class="mid"><a href="#">contact</a></li>
-                <li class="push"><a href="#"><i class="uil uil-facebook"></i></a></li>
-                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-                <li><a href="#"><i class="uil uil-twitter"></i></a></li>               
+                <li class="push"><a href="#home">home</a></li>
+                <li><a href="#store">store</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#reservation">reservations</a></li>
+                <li><a href="#events">events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">contact</a></li>          
             </ul>
-        <div class="greeting">
+            </div>
+        <div class="greeting" id="home">
             <h3 class="welcome">welcome to</h3>
             <h2 class="company">the resto</h2>
             <h5 class="text">we serve only with the freshest ingredient</h5>
@@ -37,7 +35,7 @@
         </div>
     </div>
     </header>
-    <section class="container">
+    <section class="container" id="store">
             <div class="container-item">
                 <div class="container-item-head">
                 <h3 class="welcome">discover</h3>
@@ -54,15 +52,27 @@
                 <h6>Chief Cook</h6>
         </div>
     </section>
-    <section class="container2">
+    <section class="container2" id="services">
             <h3 class="welcome">discover</h3>
             <h2 class="company">our services</h2>
                 <div class="images">
-                <div class="image-hover"><img src="breakfast.jpeg" alt="" class="meals"><br>Breakfast</div>
-                <div class="image-hover"><img src="lunch.jpeg" alt="" class="meals"><br>Lunch</div>
-                <div class="image-hover"><img src="dinner.jpeg" alt="" class="meals"><br>Dinner</div>
-                <div class="image-hover"><img src="drink.jpeg" alt="" class="meals"><br> Drink</div>
-            </div> 
+                <div class="image-hover">
+                    <img src="image1.jpeg" alt="" class="meals">
+                    <br>breakfast
+                    </div>
+                <div class="image-hover">
+                    <img src="image2.jpeg" alt="" class="meals">
+                    <br>lunch
+                </div>
+                <div class="image-hover">
+                    <img src="image3.jpeg" alt="" class="meals">
+                   <br> dinner
+                </div>
+                <div class="image-hover">
+                    <img src="image4.jpeg" alt="" class="meals">
+                    <br> drink
+                </div>
+            </div>
     </section>
     <secion class="container3">
         <div class="open">
@@ -74,7 +84,7 @@
                 <h6>7AM-9PM</h6><br>
                 <h4>+234 8060329632</h4><br>
         </div>
-        <div class="reservation">
+        <div class="reservation" id="reservation">
                 <h3>reservation</h3>
                 <h2>Online booking</h2><br>
                     <form action="" method="post">
@@ -90,7 +100,7 @@
                     <button type="submit">BOOK NOW</button>
         </div>
     </secion>
-    <section class="container4">
+    <section class="container4" id="events">
             <h3>Upcoming</h3>
             <h2 class="company">Our events</h2>
            <div class="container4-main">
@@ -128,26 +138,73 @@
                       </div>
            </div>
     </section>
-    <section class="container5">
+    <section class="container5" id="gallery">
             <h2>OUR GALLERY</h2>
             <div class="container5-item">
-                <div><img class="gallery" src="food1.jpeg" alt=""></div>
-                <div><img class="gallery" src="dinner.jpeg" alt=""></div>
-                <div><img class="gallery" src="food3.jpeg" alt=""></div>
-                <div><img class="gallery" src="food5.jpeg" alt=""></div>
-                <div><img class="gallery" src="food6.jpeg" alt=""></div>
-                <div><img class="gallery" src="food7.jpeg" alt=""></div>
-                <div><img class="gallery" src="burger.jpeg" alt=""></div>
-                <div><img class="gallery" src="spag.jpeg" alt=""></div>
+                <div>
+                    <div class="slide fade">
+                        <div class="number">1/8</div>
+                    <img class="gallery" src="food1.jpeg" alt="">
+                    <div class="caption">Vegan Special</div>
+                </div>
+                </div>
+                <div class="slide fade">
+                 <div class="number">2/8</div>
+                <img class="gallery" src="dinner.jpeg" alt="">
+                <div class="caption">Steak and Lettuce</div>
+                </div>
+                <div class="slide fade">
+                <div class="number">3/8</div>
+                <img class="gallery" src="food3.jpeg" alt="">
+                <div class="caption">Oui soup</div>
+                </div>
+                <div class="slide fade">
+                <div class="number">4/8</div>
+                <img class="gallery" src="food5.jpeg" alt="">
+                <div class="caption">Bread Sandwich</div>
+                </div>
+                <div class="slide fade">
+                <div class="number">5/8</div>
+                <img class="gallery" src="food6.jpeg" alt="">
+                <div class="caption">Steak Burger</div>
+                </div>
+                <div class="slide fade">
+                <div class="number">6/8</div>
+                <img class="gallery" src="food7.jpeg" alt="">
+                <div class="caption">Date Night Special</div>
+                </div>
+                <div class="slide fade">
+                <div class="number">7/8</div>
+                <img class="gallery" src="burger.jpeg" alt="">
+                <div class="caption">Magic Burger</div>
+                </div>
+                <div class="slide fade">
+                <div class="number">8/8</div>
+                <img class="gallery" src="spag.jpeg" alt="">
+                <div class="caption">Complete Pasta</div>
+                </div>
+                <a class="previous" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <br>
+            <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
             </div>
     </section>
-    <section class="container6">
+    <section class="container6" id="about">
         <h1>ABOUT</h1>
         <div class="container6-item">
-            <div class="container6-about">
-                    <div class="founder">
-                            <img class="founder-img" class="gallery" src="founder.jpeg" alt="">
-                        </div>
+             <div class="founder">
+                <img class="founder-img" src="founder.jpeg" alt="">
+            </div>
+            <div class="container6-text">
                 <p>Resto is a continental restuarant that doesn't only offer great 
                     products - food of various kinds but also great services. We 
                     take orders for delivering food for events of various sizes.
@@ -158,7 +215,7 @@
             </div>
         </div>
     </section>
-    <section class="contact section-padding" id="contact">
+    <section id="contact" class="contact section-padding" id="contact">
         <!-- section title -->
         <div class="section_title section_title-left">
                 <h1 class="section_title-name bell-font" >CONTACT</h1>
@@ -173,7 +230,7 @@
                <!-- single contact item -->
 <div class="contact_item">
    <div class="contact_item-icon">
-       <i class="fas fa-map-pin"></i>
+    <i class="uil uil-location-pin-alt"></i>
    </div>
    <h2 class="contact_item-title">Address</h2>
    <p class="contact_item-text">
@@ -188,11 +245,11 @@
        </div>
        <h2 class="contact_item-title">Support</h2>
        <p class="contact_item-text">
-           <span><i class="fas fa-phone"></i></span>
+           <span><i class="uil uil-calling nav"></i></span><br>
            +234 909 063 4698.
            </p> 
        <p class="contact_item-text">
-           <i class="fas fa-envelope"></i>
+        <i class="uil uil-envelope-receive nav"></i><br>
            <span><a href="mailto:Oluwakemisola757@gmail.com">Send mail</a></span>
        </p> 
    </div>
@@ -205,5 +262,6 @@
            </div>
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
