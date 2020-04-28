@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .head{
     background: url('bckgrd1.jpeg');
     position: relative;
@@ -131,16 +134,25 @@ img{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.5rem;
+    grid-gap: 0.7rem;
    
+}
+.date{
+    background: transparent;
 }
 .container2{
     text-align: center;
     padding: 2rem;
 }
+.image-{
+    width: 100%;
+}
+.meals{
+    transition: 0.7s ease-in-out;
+}
  .meals:hover{
     opacity: 0.8;
-    transform: scale(1.7);
+    transform: scale(1.5);
     border-radius: 10%;
 }
 
@@ -312,7 +324,7 @@ padding: 2rem;
         color: black;
         font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .open h5{
         color: white;
@@ -328,14 +340,14 @@ padding: 2rem;
     color: rgb(240, 240, 8);
     padding-top:0.5rem ;
     text-transform: capitalize;
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'Tangerine', cursive;
 }
 .reservation h2{
     color: black;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.5rem;
 }
 .form{
     display: grid;
@@ -344,6 +356,7 @@ padding: 2rem;
     padding-bottom: 1rem;
 }
 .form input{
+    background-color:transparent;
     width: 100%;
     border-top: none;
     border-left: none;
@@ -353,7 +366,7 @@ padding: 2rem;
 input::placeholder{
     color: black;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 .reservation button{
     width: 6rem;
@@ -379,7 +392,7 @@ input::placeholder{
 }
 .container4 h2{
     color: black;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     text-transform: uppercase;
     font-size: 2rem;
     padding-bottom: 2rem;
@@ -437,7 +450,7 @@ input::placeholder{
 }
 .container5 h2{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 2rem;
     /* margin-bottom: 2rem; */
 }
@@ -493,7 +506,7 @@ input::placeholder{
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-family:     font-family: 'Poppins', sans-serif;;
+    /* font-family: 'Poppins', sans-serif;; */
     background-color: rgba(0,0,0,0.8);
 }
 .number{
