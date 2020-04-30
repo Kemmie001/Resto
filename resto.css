@@ -139,7 +139,6 @@ padding:0.5rem ;
 .container2{
     text-align: center;
     margin-bottom: 2rem;
-    margin-left: 2rem;
 }
 .image-hover{
     width: 4rem;
@@ -159,19 +158,15 @@ padding:0.5rem ;
 
 .container2 h3{
 color: rgb(245, 245, 1);
-font-size: 1rem;
+font-size: 2.5rem;
 }
 .container2 h2{
 color: black;
 }
 @media screen and (min-width:768px){
    .head{
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
    }
-   /* .bookings{
-       margin-right: 5rem;
-       margin-top: 0;
-   } */
    .logo{
        font-size: 2rem;
    }
@@ -183,7 +178,7 @@ color: black;
     }
     .greeting{
         font-size: 5rem;
-        margin-top: 6rem;
+        margin-top: 8rem;
     }
     .container{
         margin: 3rem 10rem;
@@ -196,6 +191,14 @@ color: black;
 .container2{
     padding-left: 4rem;
     padding-right: 3rem;
+}
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .open{
     padding-top: 2rem;
@@ -211,32 +214,39 @@ color: black;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     grid-gap:1rem ;
-    /* margin-right: 15rem; */
+    margin-right: 15rem;
     /* justify-content: center; */
     /* align-content: center; */
 }
 .container6-item{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    background-color: rgb(240, 240, 8);
+    border-radius: 1rem;
+    margin: 5rem;
+    display: flex;
+}
+.container6-text{
+    margin: 3rem;  
+    line-height: 2rem; 
+}
+.founder-img{
+    width: 10rem;
+    border-radius: 10%;
 }
 .contact_info{
     grid-template-columns: repeat(3, 1fr);
     order: -1;
 }
-.container6-text{
-    margin-top: 3rem;
-    text-align: center;
-    margin-bottom: 7rem;
-    padding: 5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    border-radius: 1rem;
-    line-height: 1.5rem;
-    background: rgb(240, 240, 8);
+.gallery{
+    width: 100%;
+    height: 90vh;
 }
 .container4-mainitem{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.section_title-name{
+    text-align: center;
+    font-size: 3rem;
 }
 }
 @media screen and (max-width:768px){
@@ -290,12 +300,31 @@ color: black;
     padding-left: 1rem;
     padding-right: 1rem;
 }
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
 .container4-item3{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
     
 }
+.gallery{
+    width: 100%;
+    height: 50vh;
+}
+.founder-img{
+    width: 100%;
+    border-radius: 0;
+    height:25rem ;
+    
+}
+
 .contact_info{
     grid-template-columns: 1fr;
     order: 0;
@@ -323,17 +352,12 @@ color: black;
     padding-top: 1rem;
     
 }
+
 }
 .container3{
     background-image: url('background.jpeg');
     background-size: cover; 
     /* position: absolute; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     }
     .open{
         background-color: rgb(240, 240, 8);
@@ -478,12 +502,7 @@ input::placeholder{
     text-align: center;
     /* font-family: 'Poppins', sans-serif; */
     font-size: 2rem;
-    /* margin-bottom: 2rem; */
-}
-.gallery{
-    border-radius: 0;
-    height: 50%;
-    width: 100%;
+     margin: 2rem;
 }
 *{
     box-sizing: border-box;
@@ -577,15 +596,12 @@ input::placeholder{
     from{opacity: 0.5;}
     to{opacity: 1;}
 }
-.founder-img{
-    width: 100%;
-    border-radius: 0;
-    height:25rem ;
-    
+.section_title-name{
+    text-align: center;
+    margin: 2rem;
 }
-
 .contact_container{
-    margin: 0 auto;
+    margin-left: 2rem;
     display: grid;
     grid-row-gap: 1rem;
 } 
@@ -599,7 +615,7 @@ input::placeholder{
 }
 .contact_item-icon{
     font-size: 3rem;
-    color: rgb(230, 247, 2);
+    color: blue;
 }
 .contact_item-icon-title{
     margin: 0.5rem 0;
@@ -614,9 +630,9 @@ input::placeholder{
     text-decoration: none;
 }
 .social a{
-    color:rgb(230, 247, 2);
+    color:blue;
 }
 .nav{
     font-size: 1.5rem;
-    color: rgb(230, 247, 2);
+    color: blue;
 }
