@@ -5,6 +5,14 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.adjust{
+    background-color: rgb(240, 240, 8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 3rem;
+    padding-top: 0.3rem;
+}
 .head{
     background: url('bckgrd1.jpeg');
     position: relative;
@@ -158,14 +166,15 @@ padding:0.5rem ;
 
 .container2 h3{
 color: rgb(245, 245, 1);
-font-size: 2.5rem;
+font-size: 2rem;
 }
 .container2 h2{
 color: black;
 }
 @media screen and (min-width:768px){
    .head{
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
+    margin-top: -5rem;
    }
    .logo{
        font-size: 2rem;
@@ -179,6 +188,7 @@ color: black;
     .greeting{
         font-size: 5rem;
         margin-top: 8rem;
+        padding-top: 10rem;
     }
     .container{
         margin: 3rem 10rem;
@@ -231,6 +241,10 @@ color: black;
 .founder-img{
     width: 10rem;
     border-radius: 10%;
+}
+.contact_container{
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 .contact_info{
     grid-template-columns: repeat(3, 1fr);
@@ -601,9 +615,10 @@ input::placeholder{
     margin: 2rem;
 }
 .contact_container{
-    margin-left: 2rem;
-    display: grid;
-    grid-row-gap: 1rem;
+    text-align: center;
+    /* margin-left: 2rem; */
+    /* display: grid;
+    grid-row-gap: 1rem; */
 } 
 .contact_info{
     display: grid;
