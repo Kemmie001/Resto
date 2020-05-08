@@ -6,12 +6,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .adjust{
-    background-color: rgb(240, 240, 8);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     top: 0;
-    height: 3rem;
-    padding-top: 0.3rem;
+
 }
 .head{
     background: url('bckgrd1.jpeg');
@@ -33,6 +32,7 @@ body{
 
 .heads{
     position: relative;
+    margin-top: -1.3rem;
 }
 .headings-item{
     display: flex;
@@ -67,6 +67,9 @@ body{
     margin: 2rem;
     color: white;
     padding: 4rem;
+}
+.greeting h3{
+    color: rgb(240, 240, 8);
 }
 .welcome{
     text-transform: capitalize;
@@ -109,10 +112,12 @@ margin-bottom: 5rem;
 background-image: url('bckgrnd2.jpg');
 background-size: cover;
 padding:0.5rem ;
+
 }
  .container-item{
     background-color:  rgb(240, 240, 8);
     text-align: center;
+    transform:scaleY(1.25); 
     /* padding: 3rem; */
 }
 .container-item-img{
@@ -147,9 +152,6 @@ padding:0.5rem ;
 .container2{
     text-align: center;
     margin-bottom: 2rem;
-}
-.image-hover{
-    width: 4rem;
 }
 .meals{
     width: 100%;
@@ -191,12 +193,19 @@ color: black;
         padding-top: 10rem;
     }
     .container{
-        margin: 3rem 10rem;
-        padding:2rem ;
+        /* margin: 5rem 12rem; */
+        padding: 1rem;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
     }
 .container-item{
     font-size: 1rem;
-    padding: 2rem;
+    padding: 1rem;
+    margin: auto;
+    width: 25rem;
+}
+.image-hover{
+    width: 10rem;
 }
 .container2{
     padding-left: 4rem;
@@ -210,6 +219,15 @@ color: black;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+.container4-item-inner h6{
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+.container4-item-inner{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
 .open{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -222,25 +240,40 @@ color: black;
 }
 .container4-main{
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-gap:1rem ;
-    margin-right: 15rem;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 6rem; */
+    /* grid-gap:1rem ; */
+    margin-right: 5rem;
     /* justify-content: center; */
     /* align-content: center; */
 }
+.container4-item3{
+    grid-row: span 2;
+    grid-column: 2fr;
+}
 .container6-item{
-    background-color: rgb(240, 240, 8);
+    /* background-color: rgb(240, 240, 8); */
     border-radius: 1rem;
-    margin: 5rem;
+    /* margin: 5rem; */
     display: flex;
 }
 .container6-text{
-    margin: 3rem;  
-    line-height: 2rem; 
+    margin: 4rem; 
+    padding: 2rem; 
+    line-height: 2rem;
+    background-color: rgb(240, 240, 8);
+    border-radius: 2rem; 
+}
+.container6-inner{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
 }
 .founder-img{
-    width: 10rem;
-    border-radius: 10%;
+    width: 15rem;
+    margin-left: 2rem;
+    /* border-radius: 10%; */
 }
 .contact_container{
     margin-left: 6rem;
@@ -303,7 +336,7 @@ color: black;
         font-size: 0.5rem;
     }
 .container{
-    margin: 1rem 2rem;
+    margin: 3rem 2rem;
 }
 
 .container-item{
@@ -323,10 +356,13 @@ color: black;
     padding-bottom: 1rem;
 }
 .container4-item3{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
     margin-top: 2rem;
-    
+    padding: 1rem;
+}
+.container4-item-inner h6{
+    padding-bottom: 1rem;
 }
 .gallery{
     width: 100%;
@@ -464,7 +500,7 @@ input::placeholder{
 .container4-item{
     background: url('pexels-photo-958545.jpeg');
     background-size: cover;
-    padding: 6rem;
+    padding: 3rem;
 }
 
 .innerstyle{
@@ -472,6 +508,8 @@ input::placeholder{
     margin: auto;
     text-align: center;
     font-size: 1rem;
+    padding-top: 1rem;
+    width: 6rem;
 }
 .event{
     margin:auto 0;
@@ -488,25 +526,19 @@ input::placeholder{
 }
 .container4-item-inner{
     background: white;
-    height: 100%;
-    margin:auto ;
-    
 }
 .inner1{
     background: rgb(240, 240, 8);
     margin-right:3rem;
-    margin-left: 3rem;
+    margin-left: 4rem;
     margin-bottom: 5rem;
    
 }
-.container4-item-inner h6{
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
+
 .container4-item2{
     background: url('ricejpeg.jpeg');
     background-size: cover;
-    padding: 6rem;
+    padding: 3rem;
     margin-top: 2rem;
 }
 .container5{
@@ -610,44 +642,59 @@ input::placeholder{
     from{opacity: 0.5;}
     to{opacity: 1;}
 }
-.section_title-name{
+.container7{
     text-align: center;
-    margin: 2rem;
+
 }
-.contact_container{
-    text-align: center;
-    /* margin-left: 2rem; */
-    /* display: grid;
-    grid-row-gap: 1rem; */
-} 
-.contact_info{
-    display: grid;
-    justify-content: center;
+.container7 h1{
+    font-size: 2rem;
+    margin-top: 2rem;
 }
-.contact_item{
-    margin: 1rem 0;
+.container7-item{
+    background-color: rgb(240, 240, 8);
+    border-radius: 0.3rem;
+}
+.container7-item h1{
+    font-size: 10rem;
+    padding-top: 2rem;
+    font-stretch: ultra-expanded;
+    color: white;
+    /* transform: scaleX(1.2); */
+    font-family:'Tangerine', cursive ;
+}
+.news{
+    transform:translateY(-9rem);
+    float: right;
+    /* transform: translateX(5rem); */
+}
+.news h3{
+    margin-right: 5rem;
+}
+input{
+    text-transform: capitalize;
+    width: 12rem;
+    border: none;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
     padding: 0.5rem;
+    /* margin-top: 1rem; */
+    background-color: white;
 }
-.contact_item-icon{
-    font-size: 3rem;
-    color: blue;
-}
-.contact_item-icon-title{
-    margin: 0.5rem 0;
-    letter-spacing: 0.25rem;
-    
-}
-.contact_item-text{
-    font-size: 1rem;
-    
-}
-.contact_item-text a {
-    text-decoration: none;
+.social{
+    margin-right: 7rem;
 }
 .social a{
-    color:blue;
-}
-.nav{
+    text-decoration: none;
     font-size: 1.5rem;
-    color: blue;
+    color: teal;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family:'Tangerine', cursive ;
+    padding: 1rem;
+    font-size: 2rem;
 }
